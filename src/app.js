@@ -4,6 +4,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var pairsRouter = require('./routes/pairs');
+var dbConnection = require('./database/config');
+dbConnection.sync().then(() => {
+    console.log("synced")
+}).catch((err) => {
+    console.log("err :" + err)
+})
 
 var app = express();
 
