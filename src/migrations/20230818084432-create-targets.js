@@ -9,9 +9,6 @@ module.exports = {
                 primaryKey: true,
                 type: Sequelize.INTEGER
             },
-            broker_id: {
-                type: Sequelize.STRING
-            },
             user_id: {
                 type: Sequelize.STRING
             },
