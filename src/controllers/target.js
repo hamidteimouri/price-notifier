@@ -1,10 +1,4 @@
-const TargetModel = require("../models/targets")
+const TargetController = (req, res, next) => {
 
-
-export const TargetController = async () => {
-    try {
-        // do something
-    } catch (error) {
-        // do something  else
-    }
 }
+
